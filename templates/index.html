@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Agentic AI Chatbot</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app-container">
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>🤖 Agentic AI Assistant</h1>
+
+            <p>
+                AI Agent with Tools
+            </p>
+
+        </div>
+
+
+        <button
+            id="clearButton"
+        >
+            Clear Chat
+        </button>
+
+    </div>
+
+
+
+    <!-- CHAT AREA -->
+
+    <div
+        id="chatContainer"
+        class="chat-container"
+    >
+
+
+        <div class="message assistant-message">
+
+            <div class="message-label">
+                🤖 AI Agent
+            </div>
+
+            <div class="message-text">
+
+                Hello! 👋
+
+                I am an Agentic AI Assistant.
+
+                I can:
+
+                <ul>
+                    <li>🧮 Perform calculations</li>
+                    <li>⏰ Check the current time</li>
+                    <li>📝 Save notes</li>
+                    <li>🧠 Retrieve saved notes</li>
+                </ul>
+
+                Try asking me something!
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- INPUT AREA -->
+
+    <div class="input-container">
+
+
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Ask something..."
+        >
+
+
+        <button
+            id="sendButton"
+        >
+            Send
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script
+    src="{{ url_for('static', filename='script.js') }}"
+></script>
+
+
+</body>
+
+</html>
